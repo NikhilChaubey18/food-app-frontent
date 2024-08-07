@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage"
 import AuthCallbackPage from "./pages/AuthCallBackPage";
 import UserProfilePage from "./pages/UserProfilePage";
 import ProtectedRoute from "./auth/ProtectedRoute";
+import ManageRestaurantPage from "./pages/MangeRestaurantPage";
 
 
 export default function AppRoutes() {
@@ -18,7 +19,16 @@ export default function AppRoutes() {
               <UserProfilePage />
             </Layout>
           }
-        /></Route>
+        />
+        <Route
+          path="/manage-restaurant"
+          element={
+            <Layout>
+              <ManageRestaurantPage />
+            </Layout>
+          }
+        />
+        </Route>
       
     
     <Route path="/userpr" element={<h1>hii l'm fine</h1>}></Route>
