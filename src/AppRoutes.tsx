@@ -6,6 +6,7 @@ import UserProfilePage from "./pages/UserProfilePage";
 import ProtectedRoute from "./auth/ProtectedRoute";
 import ManageRestaurantPage from "./pages/MangeRestaurantPage";
 import SearchPage from "./pages/SearchPage";
+import DetailPage from "./pages/DetailPage";
 
 
 export default function AppRoutes() {
@@ -26,6 +27,15 @@ export default function AppRoutes() {
         element={
           <Layout showHero={false}>
             <SearchPage />
+          </Layout>
+        }
+      />
+
+<Route
+        path="/detail/:restaurantId"
+        element={
+          <Layout showHero={false}>
+            <DetailPage />
           </Layout>
         }
       />
